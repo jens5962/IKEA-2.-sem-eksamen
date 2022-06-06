@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 # scraping blog posts: https://www.housebeautiful.com/home-remodeling/diy-projects/g2826/best-ikea-hacks/
 require 'vendor/autoload.php';
 $httpClient = new \GuzzleHttp\Client();
@@ -22,5 +22,6 @@ $extractedTitles = [];
 foreach ($titles as $title) {
 $extractedTitles[] = $title->textContent.PHP_EOL;
 echo $title->textContent.PHP_EOL;
+//echo ", ";
 }
 ?>

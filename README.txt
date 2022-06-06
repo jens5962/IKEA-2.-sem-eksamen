@@ -8,7 +8,7 @@ php -r "if (hash_file('sha384', 'composer-setup.php') === '55ce33d7678c5a6110855
 php composer-setup.php
 php -r "unlink('composer-setup.php');"
 
-Hvis du her efter kan skrive "composer.phar" og den poser info, så har installationen virket.
+Hvis du her efter kan skrive "composer.phar" og den poster info, så har installationen virket.
 
 Derefter skal Guzzle installeres ved at skrive følgende i din terminal:
 composer require guzzlehttp/guzzle
