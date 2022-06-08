@@ -16,7 +16,7 @@ ob_end_clean();
 fputcsv($output, $header_args);
 
 //Write actual content to CSV
-$data = include_once 'guzzle_requests.php';
+$data = include_once 'guzzle2.php';
 foreach($data AS $data_item){
     fputcsv($output, $data_item);
 }
