@@ -1,3 +1,4 @@
+1.
 VIGTIGT for at web scraper(guzzle_requests.php) virker:
 - installeret nyeste version af "Composer"
 - installere "guzzle"
@@ -12,3 +13,6 @@ Hvis du her efter kan skrive "composer.phar" og den poster info, så har install
 
 Derefter skal Guzzle installeres ved at skrive følgende i din terminal:
 composer require guzzlehttp/guzzle
+
+
+2.
