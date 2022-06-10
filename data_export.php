@@ -1,6 +1,6 @@
 <?php
 //Creating header
-$header_args = array('Header');
+//$header_args = array('Header');
 
 //Force to output CSV
 header('Content-Type: text/csv; charset=utf-8');
@@ -13,10 +13,10 @@ $output = fopen( 'php://output', 'w' );
 ob_end_clean();
 
 //Write header to CSV file
-fputcsv($output, $header_args);
+//fputcsv($output, $header_args);
 
 //Write actual content to CSV
-$data = include_once 'guzzle2.php';
+$data = include_once 'guzzle_requests.php';
 foreach($data AS $data_item){
     fputcsv($output, $data_item);
 }

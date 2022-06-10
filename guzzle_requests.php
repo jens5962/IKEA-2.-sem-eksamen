@@ -22,6 +22,5 @@ $extractedTitles = [];
 foreach ($titles as $title) {
 $extractedTitles[] = $title->textContent;
 echo $title->textContent;
-//echo ", ";
 }
 ?>
