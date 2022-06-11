@@ -1,18 +1,16 @@
-1.
-VIGTIGT for at web scraper(guzzle_requests.php) virker:
-- installeret nyeste version af "Composer"
-- installere "guzzle"
+1. Web scraper
+Important for making web scraper functional(guzzle_requests.php):
+    - install newest verison of "composer"
+    - install "guzzle"
 
-Dette kan gøre ved at skrive følgende 4 ting i din terminal i rækkefølge:
+This can be done inserting the following 4 steps into your terminal, one at a time:
 php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');"
 php -r "if (hash_file('sha384', 'composer-setup.php') === '55ce33d7678c5a611085589f1f3ddf8b3c52d662cd01d4ba75c0ee0459970c2200a51f492d557530c71c15d8dba01eae') { echo 'Installer verified'; } else { echo 'Installer corrupt'; unlink('composer-setup.php'); } echo PHP_EOL;"
 php composer-setup.php
 php -r "unlink('composer-setup.php');"
 
-Hvis du her efter kan skrive "composer.phar" og den poster info, så har installationen virket.
+If writing "composer.phar" in the terminal posts information, then the install has been successful.
 
-Derefter skal Guzzle installeres ved at skrive følgende i din terminal:
+Install Guzzle by inserting the following command into your terminal:
 composer require guzzlehttp/guzzle
 
-
-2.
