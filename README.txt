@@ -14,3 +14,5 @@ If writing "composer.phar" in the terminal posts information, then the install h
 Install Guzzle by inserting the following command into your terminal:
 composer require guzzlehttp/guzzle
 
+
+2. 
