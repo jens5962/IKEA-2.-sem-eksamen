@@ -15,8 +15,8 @@ $xpath = new DOMXPath($doc);
 $titles = $xpath->evaluate('//*[@id="block-wrap-86690"]/div/div/div/article/div/h2/a');
 
 $extractedTitles = [];
-//We use a foreach loop to extract the text content and echo them to the terminal  
-//man kan vælge med xpath hvad det er man søger efter derfor siger vi her at vi vil have tekst.
+//We use a foreach loop to extract the text content and echo them to the terminal.
+//You need to choose what to scrape with xpath, which is why say we want text here.
 foreach ($titles as $title) {
 $extractedTitles[] = $title->textContent;
 echo $title->textContent;

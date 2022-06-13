@@ -1,3 +1,10 @@
+Description of content.
+guzzle_requests.php = used for webscraping data down from https://ikeahackers.net/.
+data_export.php = export said data from "guzzle_requests.php" to a CSV file.
+database.sql = the commands used to get the data into an SQL database (read below for more information).
+ikea_hacks.sql = a SQL dump from the database.
+
+
 1. Web scraper
 Important for making web scraper functional(guzzle_requests.php):
     - install newest verison of "composer"
@@ -15,4 +22,19 @@ Install Guzzle by inserting the following command into your terminal:
 composer require guzzlehttp/guzzle
 
 
-2. 
+
+2. database.sql
+database.sql is where all the data is stored. import this file into your empty database.
+ikea_hacks.sql is an SQL database dump from PHPMyAdmin.
+
+use this SQL query to look through categories:
+select * from posts WHERE category = '1';
+'1' is category one which is "livingroom" as seen on the wireframes.
+
+
+to see everything in the table:
+SELECT * from posts;
+
+
+to search for specific words:
+SELECT * from posts where subject like '%BILLY%'
