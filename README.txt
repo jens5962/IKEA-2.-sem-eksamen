@@ -2,7 +2,7 @@ Description of content.
 guzzle_requests.php = used for webscraping data down from https://ikeahackers.net/.
 data_export.php = export said data from "guzzle_requests.php" to a CSV file.
 database.sql = the commands used to get the data into an SQL database (read below for more information).
-ikea_hacks.sql = a SQL dump from the database.
+
 
 
 1. Web scraper
@@ -25,7 +25,6 @@ composer require guzzlehttp/guzzle
 
 2. database.sql
 database.sql is where all the data is stored. import this file into your empty database.
-ikea_hacks.sql is an SQL database dump from PHPMyAdmin.
 
 use this SQL query to look through categories:
 select * from posts WHERE category = '1';
@@ -38,3 +37,4 @@ SELECT * from posts;
 
 to search for specific words:
 SELECT * from posts where subject like '%BILLY%'
+'BILLY' refers to an IKEA product.
