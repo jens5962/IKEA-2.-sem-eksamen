@@ -10,7 +10,7 @@ create table users (
     email varchar(64) not null
 );
 
--- inserts into said users table
+-- inserts into said "users" table
 insert into users (name, email) VALUES ('Josh Anderson', 'josh1989@gmail.com'), 
 ('Rebecca Johnson', 'reb@hotmail.com'),
 ('Mathew Thompson', 'mattomp11@gmail.com'),
@@ -64,7 +64,7 @@ create table comments (
     FOREIGN KEY (posts_ID) REFERENCES posts(posts_ID)
 );
 
--- inserts into said users table
+-- inserts into said "comments" table
 insert into comments (user_ID, posts_ID, comment, date) VALUES (
 '1', '4', 'Great idea!','2022-04-02 14:00:00'), 
 ('2', '3', 'thats a bad idea','2022-04-02 14:00:00'),
