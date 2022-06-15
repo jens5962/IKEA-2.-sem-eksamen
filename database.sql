@@ -11,8 +11,10 @@ create table users (
 );
 
 -- inserts into said users table
-insert into users (name, email) VALUES ('Josh Anderson', 'josh1989@gmail.com'), ('Rebecca Johnson', 'reb@hotmail.com')
-,('Mathew Thompson', 'mattomp11@gmail.com'),('Eric Bugenhagen', 'VonBugenhagen@gmail.com');
+insert into users (name, email) VALUES ('Josh Anderson', 'josh1989@gmail.com'), 
+('Rebecca Johnson', 'reb@hotmail.com'),
+('Mathew Thompson', 'mattomp11@gmail.com'),
+('Eric Bugenhagen', 'VonBugenhagen@gmail.com');
 
 
 
@@ -67,4 +69,4 @@ insert into comments (user_ID, posts_ID, comment, date) VALUES (
 '1', '4', 'Great idea!','2022-04-02 14:00:00'), 
 ('2', '3', 'thats a bad idea','2022-04-02 14:00:00'),
 ('3', '2', 'simply amazing','2022-04-02 14:00:00'),
-('4', '1', 'best idea i ahve ever seen','2022-04-02 14:00:00');
+('4', '1', 'best idea i have ever seen','2022-04-02 14:00:00');
